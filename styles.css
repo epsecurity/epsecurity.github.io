@@ -1,46 +1,109 @@
+/* General Body Styling */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Lato', Arial, sans-serif; /* Use a clean font */
     margin: 0;
     padding: 0;
-    background-color: #f4f4f9;
-    color: #333;
+    background-color: #f4f4f9; /* Soft background */
+    color: #333; /* Neutral text color */
+    line-height: 1.6;
   }
   
+  /* Header Styling */
   header {
-    background: #007acc;
+    background: linear-gradient(90deg, #0056b3, #007acc);
     color: white;
     text-align: center;
-    padding: 1rem 0;
+    padding: 2rem 0;
   }
   
   header h1 {
-    margin: 0;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
   }
   
-  main {
-    padding: 2rem;
+  header p {
+    font-size: 1.2rem;
+    margin-top: 0;
   }
   
+  /* Navigation Styling */
   nav ul {
     list-style: none;
     padding: 0;
+    text-align: center;
   }
   
   nav li {
-    margin: 1rem 0;
+    display: inline-block;
+    margin: 0.5rem 1rem;
   }
   
   nav a {
     text-decoration: none;
     color: #007acc;
+    font-size: 1.1rem;
     font-weight: bold;
+    border-bottom: 2px solid transparent;
+    transition: color 0.3s, border-bottom 0.3s;
   }
   
+  nav a:hover {
+    color: #0056b3;
+    border-bottom: 2px solid #0056b3;
+  }
+  
+  /* Section Styling */
+  section {
+    margin: 2rem auto;
+    padding: 1.5rem;
+    max-width: 800px;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  section h2 {
+    color: #0056b3;
+    font-size: 1.8rem;
+    border-bottom: 2px solid #f4f4f9;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Footer Styling */
   footer {
     text-align: center;
-    padding: 1rem 0;
+    padding: 1rem;
     background: #333;
     color: white;
     margin-top: 2rem;
+    font-size: 0.9rem;
+  }
+  
+  /* Link Styling */
+  a {
+    color: #007acc;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+  }
+  
+  /* Media Query for Small Screens */
+  @media (max-width: 600px) {
+    header h1 {
+      font-size: 2rem;
+    }
+  
+    nav li {
+      display: block;
+      margin: 0.5rem 0;
+    }
+  
+    section {
+      padding: 1rem;
+    }
   }
   
